@@ -22,7 +22,6 @@
   <component name="PyNamespacePackagesService">
     <option name="namespacePackageFolders">
       <list>
-        <option value="$MODULE_DIR$/blog/static" />
         <option value="$MODULE_DIR$/users/templates" />
         <option value="$MODULE_DIR$/users/static" />
         <option value="$MODULE_DIR$/blog/templates/blog" />
