@@ -1,0 +1,125 @@
+html, body {
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5
+}
+
+html {
+    overflow-x: hidden
+}
+
+.w3-animate-left {
+    position: relative;
+    animation: animateleft 0.4s
+}
+
+@keyframes animateleft {
+    from {
+        left: -300px;
+        opacity: 0
+    }
+    to {
+        left: 0;
+        opacity: 1
+    }
+}
+
+.w3-card {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+}
+
+.w3-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap
+}
+
+.header, .w3-hover-teal:hover {
+    color: #fff !important;
+    background-color: #198754 !important;
+    width: 100%;
+}
+
+.header_fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.w3-large {
+    font-size: 18px !important
+}
+
+.w3-xlarge {
+    font-size: 24px !important
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0
+}
+
+.w3-wide {
+    letter-spacing: 4px
+}
+
+h1 {
+    font-size: 36px
+}
+
+h2 {
+    font-size: 30px
+}
+
+h3 {
+    font-size: 24px
+}
+
+h4 {
+    font-size: 20px
+}
+
+h5 {
+    font-size: 18px
+}
+
+h6 {
+    font-size: 16px
+}
+
+.w3-main, #main {
+    transition: margin-left .4s
+}
+
+.w3-container {
+    padding: 0.01em 16px;
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+.preview {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.w3-sidebar {
+    height: 100%;
+    width: 200px;
+    background-color: #fff;
+    position: fixed !important;
+    z-index: 1;
+    overflow: auto;
+}
+
+.w3-bar-item {
+    display: flex;
+}
