@@ -19,47 +19,34 @@
     <meta name="description" content="{{ description }}">
     <title>{{ title }}</title>
     <meta name="theme-color" content="#7952b3">
-{#    <link href="{% static 'blog/css/styles.css' %}" rel="stylesheet">#}
-    <link rel="shortcut icon" href="{% static 'blog/images/logo.png' %}" type="image/png">
+    <link href="{% static 'blog/css/styles3.css' %}" rel="stylesheet">
+    <link rel="shortcut icon" href="{% static 'global/images/logo.png' %}" type="image/png">
 </head>
 
 <body>
 
-<header class="w-100">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Expand at lg</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<div class="container">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+                <use xlink:href="#bootstrap"></use>
+            </svg>
+        </a>
 
-      <div class="collapse navbar-collapse" id="navbarsExample05">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-            <ul class="dropdown-menu" aria-labelledby="dropdown05">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="/users/reg/" class="nav-link px-2 link-secondary">Home</a></li>
+            <li><a href="#" class="nav-link px-2 link-dark">Features</a></li>
+            <li><a href="#" class="nav-link px-2 link-dark">Pricing</a></li>
+            <li><a href="#" class="nav-link px-2 link-dark">FAQs</a></li>
+            <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
         </ul>
-        <form>
-          <input class="form-control" type="text" placeholder="Search" aria-label="Search">
-        </form>
-      </div>
-    </div>
-  </nav>
-</header>
+
+        <div class="col-md-3 text-end">
+            <button type="button" class="btn btn-outline-primary me-2">Login</button>
+            <button type="button" class="btn btn-primary">Sign-up</button>
+        </div>
+    </header>
+</div>
 
 {% block content %}
 {% endblock %}

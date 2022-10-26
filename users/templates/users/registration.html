@@ -1,26 +1,21 @@
 {% extends 'users/base.html' %}
+{% load django_bootstrap5 %}
 {% load static %}
 
 {% block content %}
 
     <main class="form-signin w-100 m-auto">
         <form method="post">
-            {% csrf_token %}
-            <div>
-                <img class="mb-4" src="{% static 'users/images/logo.png' %}" alt="" width="72" height="72">
-                <h1 class="h3 mb-3 fw-normal">Вход</h1>
-            </div>
-            {% for field in form %}
-                <div class="form-group">
 
-                    {{ field.label_tag }}
-                    {{ field }}
-                    <div class="invalid-feedback">
-                        {{ field.errors }}
-                    </div>
-                </div>
-            {% endfor %}
-            <button type="submit" class="btn btn-primary btn-block">Регистрация</button>
+            {% csrf_token %}
+            <div style="display: inline-block">
+                <img class="mb-4" src="{% static 'global/images/logo.png' %}" alt="" width="72" height="72">
+                <h1 class="h3 mb-3 fw-normal">Создание аккаунта</h1>
+            </div>
+
+            {% bootstrap_form form %}
+
+            <button type="submit" class="btn btn-success btn-block">Регистрация</button>
         </form>
     </main>
 
