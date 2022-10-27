@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'users.apps.UsersConfig',
     'blog.apps.BlogConfig',
     'django_bootstrap5',
-    'jquery',
 ]
 
 MIDDLEWARE = [

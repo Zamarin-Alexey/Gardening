@@ -1,11 +1,11 @@
 function open_close_sidebar() {
     if (document.getElementById("mySidebar").style.display === "none") {
-        document.getElementById("main").style.marginLeft = "15%";
-        document.getElementById("mySidebar").style.width = "15%";
+        document.getElementById("main").style.marginLeft = "280px";
+        document.getElementById("mySidebar").style.width = "280px";
         document.getElementById("mySidebar").style.display = "block";
     } else {
-        document.getElementById("main").style.marginLeft = "0%";
-        document.getElementById("mySidebar").style.width = "0%";
+        document.getElementById("main").style.marginLeft = "0px";
+        document.getElementById("mySidebar").style.width = "0px";
         document.getElementById("mySidebar").style.display = "none";
     }
 }
